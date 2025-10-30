@@ -1,0 +1,27 @@
+@"
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DevOps Static App - Joel</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial;margin:0;display:flex;min-height:100vh;align-items:center;justify-content:center;background:#f3f4f6}
+    .card{background:#fff;padding:2rem;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,.08);max-width:720px;text-align:center}
+    h1{margin:0 0 .5rem}
+    p{margin:.5rem 0}
+    .meta{font-size:.9rem;color:#6b7280}
+    .btn{display:inline-block;padding:.6rem 1rem;border-radius:8px;margin-top:1rem;text-decoration:none;background:#0f172a;color:white}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>DevOps Static App</h1>
+    <p class="meta">A single HTML page used to demonstrate a complete DevOps pipeline in VS Code.</p>
+    <p>Built and containerized with Docker — deployed via CI/CD to a container registry and then to Kubernetes / VM.</p>
+    <a class="btn" href="#" onclick="alert('Hello from the DevOps app!')">Click me</a>
+  </div>
+</body>
+</html>
+"@ | Out-File -Encoding utf8 devops-static-app/app/index.html
+Write-Host "app/index.html created"

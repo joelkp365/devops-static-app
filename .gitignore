@@ -1,0 +1,21 @@
+﻿# OS
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
+
+# Terraform
+.terraform/
+
+# Docker
+*.tar
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# Secrets
+.env
